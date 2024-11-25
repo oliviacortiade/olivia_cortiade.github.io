@@ -87,6 +87,7 @@ nav ul li.active a {
 .logo img {
   height: 50px; /* Définit la hauteur du logo */
   width: auto; /* La largeur s'ajuste automatiquement pour garder le ratio d'aspect */
+  border-radius: 10px; /* Ajoute des coins arrondis au logo */
 }
 
 /* Sections générales */
@@ -128,7 +129,7 @@ nav ul li.active a {
 
 #about img {
   max-width: 300px;
-  border-radius: 50%;
+  border-radius: 50%; /* Rondit l'image en forme de cercle */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -151,7 +152,7 @@ nav ul li.active a {
   margin: 10px;
   max-width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* Ajoute des coins arrondis */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -201,7 +202,7 @@ nav ul li.active a {
 .portfolio-thumbnail video {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 10px; /* Ajoute des coins arrondis */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -212,6 +213,7 @@ nav ul li.active a {
 #portfolio img[src*="enjooy.jpg"] {
   max-width: 400px;
   height: auto;
+  border-radius: 10px; /* Ajoute des coins arrondis spécifiques */
 }
 
 /* Contact Section */
@@ -246,7 +248,7 @@ nav ul li.active a {
 
 #contact iframe {
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 10px; /* Ajoute des coins arrondis à l'iframe */
   border: none;
 }
 
@@ -271,6 +273,8 @@ nav ul li.active a {
 #footer a:hover {
   color: #83a4ff;
 }
+
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column; /* Aligne les éléments du menu verticalement */
