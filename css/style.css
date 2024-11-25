@@ -40,7 +40,7 @@ p {
   margin: 20px auto;
   text-align: justify;
   font-size: 16px;
-  color: #666;
+  color: black;
   line-height: 1.8;
 }
 nav {
@@ -145,7 +145,7 @@ nav ul li.active a {
 }
 
 #experience h2 {
-  color: #333;
+  color: #5271ff;
 }
 
 #experience img {
@@ -226,7 +226,7 @@ nav ul li.active a {
 }
 
 #contact h2 {
-  color: black;
+  color: #5271ff;
   font-size: 35px;
   margin-bottom: 20px;
 }
@@ -254,7 +254,7 @@ nav ul li.active a {
 
 /* Footer */
 #footer {
-  background: #333;
+  background: #5271ff;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -262,7 +262,9 @@ nav ul li.active a {
 
 #footer p {
   font-size: 14px;
-  color: #bbb;
+  margin-left: 20px auto;
+  text-align: justify;
+  color: white;
 }
 
 #footer a {
