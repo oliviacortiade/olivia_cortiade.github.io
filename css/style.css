@@ -226,3 +226,77 @@ p {
 #footer a:hover {
   color: #83a4ff;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .paddsection {
+    padding: 50px 15px;
+  }
+
+  #about .div-img-bg {
+    justify-content: center;
+  }
+
+  #about img {
+    max-width: 200px;
+  }
+
+  #portfolio .portfolio-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-thumbnail {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #portfolio img[src*="enjooy.jpg"] {
+    max-width: 300px;
+  }
+
+  #contact iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #header .header-content h1 {
+    font-size: 40px;
+  }
+
+  #header .header-content h2 {
+    font-size: 25px;
+  }
+
+  #about img {
+    max-width: 250px;
+  }
+
+  #about .about-descr {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .portfolio-thumbnail img,
+  .portfolio-thumbnail video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact {
+    padding: 40px 15px;
+  }
+
+  #contact h2 {
+    font-size: 30px;
+  }
+
+  #footer p {
+    font-size: 12px;
+  }
+}
