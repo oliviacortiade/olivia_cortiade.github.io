@@ -9,245 +9,316 @@
 /*-----------------------------------------------------------------------------------*/
 
 body {
-  background: #ffffff;
-  color: #898989;
-  font-family: 'Poppins', helvetica;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  overflow-x: hidden;
-  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Blanc cassé élégant */
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-}
-h1 {
-  font-size: large;
-}
-
-h2 {
-  color: #5271ff;
-  font-weight: 600;
-  font-size: 40px;
-  margin-left: 20px;
-}
-
-h4 {
-  color: #292929;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-a {
-  color: #292929;
-  text-decoration: none !important;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover {
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover, a:focus {
-  color: #b8a07e;
-  text-decoration: underline;
-}
-
-nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #999999;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  line-height: 14px;
-  margin-top: 0px;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
+  padding: 0;
 }
 
 p {
-  margin: 25px 0;
-  padding: 0;
-  font-size: 15px;
-  color: #999999;
-  line-height: 28px;
-  margin-left: 20px;
+  margin: 0 0 20px;
 }
 
-::-moz-selection {
-  background: #b8a07e;
-  color: #fff;
-}
-
-::selection {
-  background: #b8a07e;
-  color: #fff;
-}
-
-.btn {
-  background: #333;
-  border: medium none;
-  border-radius: 0;
-  color: #fff;
-  font-size: 12px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 30px;
-  text-transform: uppercase;
-}
-
-.btn:hover, .btn:focus {
-  color: #fff;
-}
-
-.padDiv {
-  padding: 30px 20px;
-}
-
-.section-title {
-  margin-bottom: 70px;
-}
-
-.section-title h2 {
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-left: 24px;
-  color: #5271ff;
-}
-
-.form-control {
-  background-color: transparent;
-  border: 1px solid #999;
-  border-radius: 0;
-  color: #999999;
-  font-size: 12px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: 0.1em;
-  padding-left: 10px;
-  margin: 0 0 25px 0;
-  line-height: 14px;
-  text-transform: uppercase;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  outline: 0 none;
-}
-
-.paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
-
-.hvr-shutter-in-horizontal::before {
-  background: #333;
-}
-
-.hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-/* Navbar Top
-/*-----------------------------------------------------------------------------------*/
-
-nav {
-  position: fixed;
-  background: #fff;
-  z-index: 1000;
-  width: 100%;
-  padding: 20px;
-  display: none;
-  -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-}
-
-.nav-menu {
-  float: right;
-  line-height: 32px;
-  margin-bottom: 0;
-  padding-top: 16px;
-}
-
-nav ul li {
-  float: left;
-  margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  margin-left: 40px;
-}
-
-nav ul li a {
-  padding: 2px 0 0 0;
-  position: relative;
-  display: block;
-  font-size: 14px;
-  color: #5271ff;
-  font-family: 'Poppins', helvetica;
-  font-weight: 500;
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
-.logo {
-  float: left;
-}
-
-.logo img {
-  width: 150px;
-  height: 150px;
-}
-
-.responsive {
-  display: none;
-  font-size: 23px;
-}
-
-.active {
-  color: #afafaf;
-}
-
-/* Header
-/*-----------------------------------------------------------------------------------*/
-
+/* ==================== Header Section ==================== */
 #header {
-  background: url("../images/moi.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("../images/moi.jpg") no-repeat center center / cover;
   height: 100vh;
+  position: relative;
+}
+
+#header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-attachment: fixed;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Voile noir semi-transparent */
+  z-index: 1;
+}
+
+#header .header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #5271ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 20px auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ==================== Section Styles ==================== */
+.paddsection {
+  padding: 80px 15%;
+  background: #f8f9fa;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+#about {
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 5px solid #5271ff;
+  padding: 60px 20px;
+}
+
+#about .p-heading {
+  color: #333;
+  font-size: 2.5em;
+}
+
+#portfolio {
+  background-color: #ffffff;
+  padding: 80px 15%;
+  border-top: 5px solid #5271ff;
+}
+
+#contact {
+  background: #f8f9fa;
+  padding: 50px 20px;
+}
+
+/* ==================== Buttons ==================== */
+.btn {
+  background: linear-gradient(135deg, #5271ff, #6a89ff);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #6a89ff, #5271ff);
+  transform: scale(1.05);
+}
+
+/* ==================== Footer ==================== */
+#footer {
+  background: #292929;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#footer a {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  color: #5271ff;
+}
+
+#footer .socials-media ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
+#footer .socials-media ul li a:hover {
+  color: #5271ff;
+}
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}/* ==================== Base Styles ==================== */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Blanc cassé élégant */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+/* ==================== Header Section ==================== */
+#header {
+  background: url("../images/moi.jpg") no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+}
+
+#header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Voile noir semi-transparent */
+  z-index: 1;
+}
+
+#header .header-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #5271ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #333333;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin: 20px auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ==================== Section Styles ==================== */
+.paddsection {
+  padding: 80px 15%;
+  background: #f8f9fa;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+#about {
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 5px solid #5271ff;
+  padding: 60px 20px;
+}
+
+#about .p-heading {
+  color: #333;
+  font-size: 2.5em;
+}
+
+#portfolio {
+  background-color: #ffffff;
+  padding: 80px 15%;
+  border-top: 5px solid #5271ff;
+}
+
+#contact {
+  background: #f8f9fa;
+  padding: 50px 20px;
+}
+
+/* ==================== Buttons ==================== */
+.btn {
+  background: linear-gradient(135deg, #5271ff, #6a89ff);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #6a89ff, #5271ff);
+  transform: scale(1.05);
+}
+
+/* ==================== Footer ==================== */
+#footer {
+  background: #292929;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#footer a {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+#footer a:hover {
+  color: #5271ff;
+}
+
+#footer .socials-media ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
+#footer .socials-media ul li a:hover {
+  color: #5271ff;
+}
+
+/* ==================== Animations ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
