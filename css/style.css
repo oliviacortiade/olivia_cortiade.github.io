@@ -1,174 +1,228 @@
 /* Général */
 body {
-  text-align: center; /* Aligner le contenu global au centre */
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  font-family: 'Poppins', helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f9f9f9;
+  text-align: center;
 }
 
 /* Titres */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 auto;
   text-align: center;
+  margin: 20px 0;
 }
 
 h1 {
-  font-size: large;
+  font-size: 50px;
+  color: #5271ff;
+  font-weight: bold;
 }
 
 h2 {
+  font-size: 40px;
   color: #5271ff;
   font-weight: 600;
-  font-size: 40px;
-  text-align: center; /* Centrer le texte */
 }
 
 h4 {
-  color: #292929;
-  font-size: 14px;
-  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* Paragraphes */
 p {
-  margin: 25px auto; /* Centrer le texte avec des marges automatiques */
-  padding: 0;
-  font-size: 15px;
-  color: #999999;
-  line-height: 28px;
-  text-align: justify; /* Justifie le texte */
-  max-width: 800px; /* Limite la largeur pour un meilleur alignement */
-}
-
-/* Boutons */
-.btn {
-  display: inline-block; /* Garde les boutons en ligne */
-  margin: 10px auto; /* Centre les boutons */
-  text-align: center;
-}
-
-/* Section Titre */
-.section-title {
-  margin-bottom: 70px;
-  text-align: center; /* Centrer les titres de section */
-}
-
-.section-title h2 {
-  font-size: 40px;
-  color: #5271ff;
-  margin: 0 auto; /* Centre le titre */
-  text-transform: uppercase;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
 }
 
 /* Sections générales */
 .paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  text-align: center; /* Centre le contenu */
+  padding: 60px 20px;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 #header {
-  display: flex;
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  text-align: center; /* Texte centré */
   height: 100vh;
+  background: linear-gradient(to bottom, #5271ff, #83a4ff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.header-content h1, .header-content h2, .header-content p {
-  margin: 0 auto;
-  text-align: center; /* Texte centré */
+#header .header-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#header .header-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* About Section */
-#about {
-  text-align: center;
-  padding-top: 90px;
-}
-
 #about .div-img-bg {
-  margin: 0 auto; /* Centre l'image */
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+#about img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #about .about-descr {
+  max-width: 900px;
   margin: 0 auto;
-  max-width: 800px;
-  text-align: justify; /* Justifie le texte pour un meilleur rendu */
+  text-align: justify;
 }
 
 /* Experience Section */
-#Experience {
-  text-align: center;
-  padding-top: 90px;
+#experience {
+  background: #f7f9fc;
 }
 
-#Experience .expert .ordi {
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: justify;
+#experience h2 {
+  color: #333;
+}
+
+#experience img {
+  margin: 10px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Portfolio Section */
 #portfolio {
-  text-align: center;
-  padding: 50px 0;
+  background: #f9f9f9;
+  padding: 50px 20px;
 }
 
 #portfolio .portfolio-list {
   display: flex;
-  justify-content: center; /* Centre les catégories */
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
-#portfolio .portfolio-container {
+#portfolio .portfolio-list ul {
+  padding: 0;
+}
+
+#portfolio .portfolio-list li {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #5271ff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#portfolio .portfolio-list li:hover {
+  background: #3958b5;
+}
+
+.portfolio-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centre les éléments */
+  justify-content: center;
 }
 
 .portfolio-thumbnail {
-  margin: 15px; /* Espacement uniforme */
-  text-align: center;
+  margin: 15px;
+  transition: transform 0.3s;
 }
 
-/* Vidéos */
-.video-container {
-  text-align: center;
-  margin: 20px auto;
-}
-
+.portfolio-thumbnail img,
 .portfolio-thumbnail video {
-  margin: 0 auto;
-  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+#portfolio img[src*="enjooy.jpg"] {
+  max-width: 400px;
+  height: auto;
 }
 
 /* Contact Section */
 #contact {
+  background: #5271ff;
+  color: white;
+  padding: 60px 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
-#contact input, #contact textarea {
-  margin: 10px auto;
-  display: block;
+#contact h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact a {
+  color: #ffdfdf;
+  text-decoration: underline;
+}
+
+#contact iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
 }
 
 /* Footer */
 #footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
 #footer p {
-  margin: 0 auto;
-  text-align: center;
+  font-size: 14px;
+  color: #bbb;
 }
 
-#footer .socials-media ul {
-  justify-content: center;
-  display: flex;
+#footer a {
+  color: #5271ff;
+  text-decoration: none;
 }
 
-#footer .socials-media ul li {
-  margin: 0 10px;
+#footer a:hover {
+  color: #83a4ff;
 }
