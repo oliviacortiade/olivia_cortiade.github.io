@@ -47,7 +47,7 @@ p {
 /* Sections générales */
 .paddsection {
   padding: 60px 20px;
-  background: #fff;
+  background: #fff8e1;  /* Jaune pâle */
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,7 +56,7 @@ p {
 /* Header */
 #header {
   height: 100vh;
-  background: linear-gradient(to bottom, #fff9c4, #ffecb3);
+  background: linear-gradient(to bottom, #5271ff, #83a4ff);
   color: white;
   display: flex;
   justify-content: center;
@@ -112,7 +112,7 @@ p {
 
 /* Portfolio Section */
 #portfolio {
- background: #fff8e1;
+  background: #f9f9f9;
   padding: 50px 20px;
 }
 
@@ -225,78 +225,4 @@ p {
 
 #footer a:hover {
   color: #83a4ff;
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .paddsection {
-    padding: 50px 15px;
-  }
-
-  #about .div-img-bg {
-    justify-content: center;
-  }
-
-  #about img {
-    max-width: 200px;
-  }
-
-  #portfolio .portfolio-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .portfolio-thumbnail {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  #portfolio img[src*="enjooy.jpg"] {
-    max-width: 300px;
-  }
-
-  #contact iframe {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #header .header-content h1 {
-    font-size: 40px;
-  }
-
-  #header .header-content h2 {
-    font-size: 25px;
-  }
-
-  #about img {
-    max-width: 250px;
-  }
-
-  #about .about-descr {
-    max-width: 100%;
-    padding: 0 15px;
-  }
-
-  .portfolio-thumbnail img,
-  .portfolio-thumbnail video {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  #contact {
-    padding: 40px 15px;
-  }
-
-  #contact h2 {
-    font-size: 30px;
-  }
-
-  #footer p {
-    font-size: 12px;
-  }
 }
