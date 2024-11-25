@@ -2,44 +2,52 @@
     General Styling
 -----------------------------------------------------------------------------------*/
 body {
-  background: #ffffff;
-  color: #898989;
-  font-family: 'Poppins', helvetica;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  overflow-x: hidden;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  line-height: 1.6;
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 h1 {
-  font-size: large;
+  font-size: 50px;
+  color: #5271ff;
+  font-weight: bold;
 }
 
 h2 {
+  font-size: 40px;
   color: #5271ff;
   font-weight: 600;
-  font-size: 40px;
-  margin-left: 20px;
+  margin-left: 20px; /* Pour garder la cohérence avec les styles précédents */
 }
 
 h4 {
-  color: #292929;
-  font-size: 14px;
-  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
 }
 
 /*-----------------------------------------------------------------------------------
     Navigation Styling
 -----------------------------------------------------------------------------------*/
-
 nav {
   position: fixed;
   top: 0;
@@ -67,7 +75,6 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
@@ -76,7 +83,6 @@ nav ul li {
 nav ul li a {
   color: #5271ff;
   text-decoration: none;
-  position: relative;
   transition: all 0.3s ease;
 }
 
@@ -90,18 +96,103 @@ nav ul li.active a {
   font-weight: 700;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo img {
   height: 50px;
   width: auto;
 }
 
 /*-----------------------------------------------------------------------------------
-    Responsive Navigation
+    Sections Styling
+-----------------------------------------------------------------------------------*/
+
+.paddsection {
+  padding: 60px 20px;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#header h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#header h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#about .div-img-bg {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#about img {
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#experience {
+  background: #f7f9fc;
+}
+
+#portfolio {
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-thumbnail {
+  margin: 15px;
+  transition: transform 0.3s;
+}
+
+.portfolio-thumbnail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+#contact {
+  background: #f9f7a4;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------
+    Responsive Styling
 -----------------------------------------------------------------------------------*/
 
 @media (max-width: 768px) {
@@ -118,11 +209,5 @@ nav ul li.active a {
 
   nav ul li {
     margin-bottom: 10px;
-  }
-
-  .responsive {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
   }
 }
