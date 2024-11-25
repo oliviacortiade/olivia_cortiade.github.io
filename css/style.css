@@ -48,7 +48,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%; /* Prend toute la largeur de la page */
-  background: #fff; /* Fond blanc */
+  background: #f9f7a4;
   z-index: 1000; 
   padding: 20px 0; /* Espacement vertical du menu */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
