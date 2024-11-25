@@ -8,7 +8,7 @@ body {
   background: #f9f9f9;
 }
 
-/* Fresque en haut */
+/* Menu de navigation avec fresque */
 #fresque {
   position: fixed;
   top: 0;
@@ -18,11 +18,19 @@ body {
   background-color: #f9f7a4; /* Jaune pâle */
   display: flex;
   align-items: center;
-  justify-content: center; /* Centrer horizontalement les éléments */
-  flex-direction: column; /* Empiler les éléments (menu) verticalement */
+  justify-content: space-between;
   padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
+}
+
+/* Logo dans la fresque */
+#fresque .logo {
+  height: 40px;
+}
+
+#fresque img {
+  height: 100%;
 }
 
 /* Liens du menu de navigation */
@@ -98,17 +106,20 @@ p {
 @media (max-width: 768px) {
   #fresque {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     height: auto;
-    padding: 10px;
   }
 
   #fresque ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   #fresque ul li {
     margin: 10px 0;
+  }
+
+  #fresque .logo {
+    margin-bottom: 10px;
   }
 }
