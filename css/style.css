@@ -6,117 +6,55 @@ body {
   color: #333;
   line-height: 1.6;
   background: #f9f9f9;
-  text-align: center;
 }
 
-/* Titres */
-h1, h2, h3, h4, h5, h6 {
-  text-align: center;
-  margin: 20px 0;
-}
-
-h1 {
-  font-size: 50px;
-  color: #5271ff;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 40px;
-  color: #5271ff;
-  font-weight: 600;
-}
-
-h4 {
-  color: #555;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* Paragraphes */
-p {
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: justify;
-  font-size: 16px;
-  color: #666;
-  line-height: 1.8;
-}
-
-/* Sections générales */
-.paddsection {
-  padding: 60px 20px;
-  background: #fff;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Menu de navigation */
-nav {
-  background-color: #f9f7a4; /* Fond jaune pâle */
-  padding: 10px 0;
+/* Menu de navigation avec fresque */
+#fresque {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 10;
+  height: 80px; /* Ajuste la hauteur de la fresque */
+  background-color: #f9f7a4; /* Jaune pâle */
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Pour aligner le logo et les liens */
-  padding-left: 20px; /* Un peu de marge à gauche */
-  padding-right: 20px; /* Un peu de marge à droite */
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
-nav .logo {
-  height: 40px; /* Ajuste la taille du logo */
+/* Logo dans la fresque */
+#fresque .logo {
+  height: 40px;
 }
 
-nav ul {
+#fresque img {
+  height: 100%;
+}
+
+/* Liens du menu de navigation */
+#fresque ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center; /* Pour aligner verticalement les liens */
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 20px;
+#fresque ul li {
+  margin: 0 15px;
 }
 
-nav ul li a {
+#fresque ul li a {
   text-decoration: none;
-  color: #333; /* Couleur de texte noire */
-  font-size: 18px;
+  color: #333; /* Couleur du texte */
   font-weight: bold;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+#fresque ul li a:hover {
   color: #5271ff; /* Couleur bleue au survol */
-}
-
-/* Décalage du contenu pour que le menu fixe ne cache pas la première section */
-#header {
-  height: 100vh;
-  background: linear-gradient(to bottom, #5271ff, #83a4ff);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 80px; /* Décale un peu le contenu sous le menu */
-}
-
-#header .header-content h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-
-#header .header-content h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
 }
 
 /* About Section */
@@ -138,136 +76,50 @@ nav ul li a:hover {
   text-align: justify;
 }
 
-/* Experience Section */
-#experience {
-  background: #f7f9fc;
-}
-
-#experience h2 {
-  color: #333;
-}
-
-#experience img {
-  margin: 10px;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Portfolio Section */
-#portfolio {
-  background: #f9f9f9;
-  padding: 50px 20px;
-}
-
-#portfolio .portfolio-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-#portfolio .portfolio-list ul {
-  padding: 0;
-}
-
-#portfolio .portfolio-list li {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 0 10px;
-  background: #5271ff;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-#portfolio .portfolio-list li:hover {
-  background: #3958b5;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.portfolio-thumbnail {
-  margin: 15px;
-  transition: transform 0.3s;
-}
-
-.portfolio-thumbnail img,
-.portfolio-thumbnail video {
-  max-width: 100%;
-  height: auto;
+/* Section générale */
+.paddsection {
+  padding: 60px 20px;
+  background: #fff;
+  margin-top: 100px; /* Pour que la section ne soit pas cachée par la fresque */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-thumbnail:hover {
-  transform: scale(1.05);
+h2 {
+  font-size: 32px;
+  color: #333;
 }
 
-#portfolio img[src*="enjooy.jpg"] {
-  max-width: 400px;
-  height: auto;
-}
-
-/* Contact Section */
-#contact {
-  background: #f9f7a4; /* Fond jaune pâle */
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-#contact h2 {
-  color: white;
-  font-size: 35px;
-  margin-bottom: 20px;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-}
-
-#contact li {
-  margin-bottom: 10px;
+p {
   font-size: 16px;
+  color: #666;
 }
 
-#contact a {
-  color: #ffdfdf;
-  text-decoration: underline;
-}
-
-#contact iframe {
+.small-image img {
+  max-width: 150px;
   margin-top: 20px;
   border-radius: 10px;
-  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
-#footer {
-  background: #333;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
+/* Responsiveness */
+@media (max-width: 768px) {
+  #fresque {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
 
-#footer p {
-  font-size: 14px;
-  color: #bbb;
-}
+  #fresque ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-#footer a {
-  color: #5271ff;
-  text-decoration: none;
-}
+  #fresque ul li {
+    margin: 10px 0;
+  }
 
-#footer a:hover {
-  color: #83a4ff;
+  #fresque .logo {
+    margin-bottom: 10px;
+  }
 }
