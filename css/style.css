@@ -61,13 +61,23 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pour aligner le logo et les liens */
+  padding-left: 20px; /* Un peu de marge à gauche */
+  padding-right: 20px; /* Un peu de marge à droite */
+}
+
+nav .logo {
+  height: 40px; /* Ajuste la taille du logo */
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center; /* Pour aligner verticalement les liens */
 }
 
 nav ul li {
@@ -87,7 +97,7 @@ nav ul li a:hover {
   color: #5271ff; /* Couleur bleue au survol */
 }
 
-/* Header */
+/* Décalage du contenu pour que le menu fixe ne cache pas la première section */
 #header {
   height: 100vh;
   background: linear-gradient(to bottom, #5271ff, #83a4ff);
@@ -96,6 +106,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 80px; /* Décale un peu le contenu sous le menu */
 }
 
 #header .header-content h1 {
@@ -259,11 +270,4 @@ nav ul li a:hover {
 
 #footer a:hover {
   color: #83a4ff;
-}
-
-/* Réduction des vidéos */
-#portfolio iframe {
-  max-width: 500px; /* Réduction de la taille des vidéos */
-  margin: 10px;
-  height: auto;
 }
