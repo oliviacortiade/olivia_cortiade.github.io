@@ -5,10 +5,10 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   line-height: 1.6;
-  background: #f9f9f9;
+  background: #f9f7a4;
 }
 
-/* Menu de navigation avec fresque */
+/* Fresque en haut */
 #fresque {
   position: fixed;
   top: 0;
@@ -18,7 +18,8 @@ body {
   background-color: #f9f7a4; /* Jaune pâle */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Centrer le contenu horizontalement */
+  flex-direction: column; /* Empiler les éléments (logo et menu) verticalement */
   padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -27,13 +28,14 @@ body {
 /* Logo dans la fresque */
 #fresque .logo {
   height: 40px;
+  margin-bottom: 10px; /* Espace entre le logo et les liens */
 }
 
 #fresque img {
   height: 100%;
 }
 
-/* Liens du menu de navigation */
+/* Liens du menu de navigation sous le logo */
 #fresque ul {
   list-style: none;
   padding: 0;
@@ -106,13 +108,14 @@ p {
 @media (max-width: 768px) {
   #fresque {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     height: auto;
+    padding: 10px;
   }
 
   #fresque ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   #fresque ul li {
