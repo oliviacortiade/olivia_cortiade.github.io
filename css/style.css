@@ -53,10 +53,44 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Menu de navigation */
+nav {
+  background-color: #f9f7a4; /* Fond jaune pâle */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Couleur de texte noire */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5271ff; /* Couleur bleue au survol */
+}
+
 /* Header */
 #header {
   height: 100vh;
-  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4);
+  background: linear-gradient(to bottom, #5271ff, #83a4ff);
   color: white;
   display: flex;
   justify-content: center;
@@ -130,15 +164,15 @@ p {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px;
-  background: #f9f7a4;
-  color: black;
+  background: #5271ff;
+  color: white;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 #portfolio .portfolio-list li:hover {
-  background: #f3e58f;
+  background: #3958b5;
 }
 
 .portfolio-container {
@@ -169,23 +203,17 @@ p {
   height: auto;
 }
 
-/* Réduction de la taille des vidéos */
-.portfolio-thumbnail video {
-  max-width: 400px; /* Vous pouvez ajuster cette valeur selon vos besoins */
-  height: auto;
-}
-
 /* Contact Section */
 #contact {
-  background: #f9f7a4;
-  color: black;
+  background: #f9f7a4; /* Fond jaune pâle */
+  color: white;
   padding: 60px 20px;
   text-align: center;
   border-radius: 10px;
 }
 
 #contact h2 {
-  color: black;
+  color: white;
   font-size: 35px;
   margin-bottom: 20px;
 }
@@ -201,7 +229,7 @@ p {
 }
 
 #contact a {
-  color: #5271ff;
+  color: #ffdfdf;
   text-decoration: underline;
 }
 
@@ -231,4 +259,11 @@ p {
 
 #footer a:hover {
   color: #83a4ff;
+}
+
+/* Réduction des vidéos */
+#portfolio iframe {
+  max-width: 500px; /* Réduction de la taille des vidéos */
+  margin: 10px;
+  height: auto;
 }
