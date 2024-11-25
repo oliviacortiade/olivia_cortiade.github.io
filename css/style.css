@@ -1,16 +1,15 @@
-/*-----------------------------------------------------------------------------------
-    General Styling
------------------------------------------------------------------------------------*/
+/* Général */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
-  background: #f9f9f9;
   line-height: 1.6;
+  background: #f9f9f9;
   text-align: center;
 }
 
+/* Titres */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 20px 0;
@@ -26,7 +25,6 @@ h2 {
   font-size: 40px;
   color: #5271ff;
   font-weight: 600;
-  margin-left: 20px; /* Pour garder la cohérence avec les styles précédents */
 }
 
 h4 {
@@ -36,6 +34,7 @@ h4 {
   text-transform: uppercase;
 }
 
+/* Paragraphes */
 p {
   max-width: 800px;
   margin: 20px auto;
@@ -44,78 +43,65 @@ p {
   color: #666;
   line-height: 1.8;
 }
-
-/*-----------------------------------------------------------------------------------
-    Navigation Styling
------------------------------------------------------------------------------------*/
 nav {
-  position: fixed;
+  position: fixed; /* Le menu est fixe en haut de la page */
   top: 0;
   left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 1000;
-  padding: 20px 0;
+  width: 100%; /* Prend toute la largeur de la page */
+  background: #fff; /* Fond blanc */
+  z-index: 1000; 
+  padding: 20px 0; /* Espacement vertical du menu */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   padding: 0 40px;
 }
-
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
 }
-
 nav ul li {
-  margin-right: 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
+  margin-right: 20px; /* Espace entre les éléments du menu */
+  font-size: 14px; /* Taille de la police */
+  text-transform: uppercase; /* Met le texte en majuscules */
+  font-weight: 500; /* Poids de la police */
 }
-
 nav ul li a {
-  color: #5271ff;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  color: #5271ff; /* Couleur bleue pour les liens */
+  text-decoration: none; /* Enlève le soulignement par défaut */
+  transition: all 0.3s ease; /* Ajoute une transition fluide au survol */
 }
-
 nav ul li a:hover {
-  color: #b8a07e;
-  text-decoration: underline;
+  color: #b8a07e; /* Change la couleur du texte au survol */
+  text-decoration: underline; /* Ajoute un soulignement au survol */
 }
-
 nav ul li.active a {
-  color: #292929;
-  font-weight: 700;
+  color: #292929; /* Change la couleur du lien actif */
+  font-weight: 700; /* Met le lien actif en gras */
 }
-
 .logo img {
-  height: 50px;
-  width: auto;
+  height: 50px; /* Définit la hauteur du logo */
+  width: auto; /* La largeur s'ajuste automatiquement pour garder le ratio d'aspect */
 }
 
-/*-----------------------------------------------------------------------------------
-    Sections Styling
------------------------------------------------------------------------------------*/
-
+/* Sections générales */
 .paddsection {
   padding: 60px 20px;
-  background: #fff;
+  background: #fff;  /* Fond d'origine */
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 #header {
   height: 100vh;
-  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4);
+  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4); 
   color: white;
   display: flex;
   justify-content: center;
@@ -123,16 +109,17 @@ nav ul li.active a {
   flex-direction: column;
 }
 
-#header h1 {
+#header .header-content h1 {
   font-size: 60px;
   margin-bottom: 10px;
 }
 
-#header h2 {
+#header .header-content h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
 
+/* About Section */
 #about .div-img-bg {
   display: flex;
   justify-content: center;
@@ -145,13 +132,58 @@ nav ul li.active a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#about .about-descr {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Experience Section */
 #experience {
   background: #f7f9fc;
 }
 
+#experience h2 {
+  color: #333;
+}
+
+#experience img {
+  margin: 10px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
 #portfolio {
   background: #f9f9f9;
   padding: 50px 20px;
+}
+
+#portfolio .portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#portfolio .portfolio-list ul {
+  padding: 0;
+}
+
+#portfolio .portfolio-list li {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #f9f7a4; /* Remplacer le bleu par du jaune pâle */
+  color: black; /* Assurez-vous que le texte reste visible */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#portfolio .portfolio-list li:hover {
+  background: #f3e58f; /* Un jaune plus clair au survol */
 }
 
 .portfolio-container {
@@ -165,7 +197,8 @@ nav ul li.active a {
   transition: transform 0.3s;
 }
 
-.portfolio-thumbnail img {
+.portfolio-thumbnail img,
+.portfolio-thumbnail video {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -176,6 +209,12 @@ nav ul li.active a {
   transform: scale(1.05);
 }
 
+#portfolio img[src*="enjooy.jpg"] {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Contact Section */
 #contact {
   background: #f9f7a4;
   color: black;
@@ -184,6 +223,34 @@ nav ul li.active a {
   border-radius: 10px;
 }
 
+#contact h2 {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact a {
+  color: #5271ff;
+  text-decoration: underline;
+}
+
+#contact iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Footer */
 #footer {
   background: #333;
   color: white;
@@ -191,22 +258,31 @@ nav ul li.active a {
   text-align: center;
 }
 
-/*-----------------------------------------------------------------------------------
-    Responsive Styling
------------------------------------------------------------------------------------*/
+#footer p {
+  font-size: 14px;
+  color: #bbb;
+}
 
+#footer a {
+  color: #5271ff;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #83a4ff;
+}
 @media (max-width: 768px) {
   .nav-menu {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 20px;
+    flex-direction: column; /* Aligne les éléments du menu verticalement */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+    padding: 0 20px; /* Ajuste l'espacement interne */
   }
 
   nav ul {
-    flex-direction: column;
-    width: 100%;
+    flex-direction: column; /* La liste des éléments devient verticale */
+    width: 100%; /* La liste prend toute la largeur disponible */
   }
 
   nav ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Ajoute un espacement entre les éléments du menu */
   }
