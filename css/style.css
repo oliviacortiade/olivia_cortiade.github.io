@@ -6,55 +6,72 @@ body {
   color: #333;
   line-height: 1.6;
   background: #f9f9f9;
+  text-align: center;
 }
 
-/* Menu de navigation avec fresque */
-#fresque {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px; /* Ajuste la hauteur de la fresque */
-  background-color: #f9f7a4; /* Jaune pâle */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* Logo dans la fresque */
-#fresque .logo {
-  height: 40px;
-}
-
-#fresque img {
-  height: 100%;
-}
-
-/* Liens du menu de navigation */
-#fresque ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-#fresque ul li {
-  margin: 0 15px;
-}
-
-#fresque ul li a {
-  text-decoration: none;
-  color: #333; /* Couleur du texte */
+h1 {
+  font-size: 50px;
+  color: #5271ff;
   font-weight: bold;
-  font-size: 18px;
-  transition: color 0.3s ease;
 }
 
-#fresque ul li a:hover {
-  color: #5271ff; /* Couleur bleue au survol */
+h2 {
+  font-size: 40px;
+  color: #5271ff;
+  font-weight: 600;
+}
+
+h4 {
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Paragraphes */
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Sections générales */
+.paddsection {
+  padding: 60px 20px;
+  background: #fff;  /* Fond d'origine */
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+#header {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4); /* Remplacer le fond bleu par du jaune pâle */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#header .header-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#header .header-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* About Section */
@@ -76,50 +93,136 @@ body {
   text-align: justify;
 }
 
-/* Section générale */
-.paddsection {
-  padding: 60px 20px;
-  background: #fff;
-  margin-top: 100px; /* Pour que la section ne soit pas cachée par la fresque */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Experience Section */
+#experience {
+  background: #f7f9fc;
 }
 
-h2 {
-  font-size: 32px;
+#experience h2 {
   color: #333;
 }
 
-p {
-  font-size: 16px;
-  color: #666;
+#experience img {
+  margin: 10px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.small-image img {
-  max-width: 150px;
-  margin-top: 20px;
+/* Portfolio Section */
+#portfolio {
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+
+#portfolio .portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#portfolio .portfolio-list ul {
+  padding: 0;
+}
+
+#portfolio .portfolio-list li {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: #f9f7a4; /* Remplacer le bleu par du jaune pâle */
+  color: black; /* Assurez-vous que le texte reste visible */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#portfolio .portfolio-list li:hover {
+  background: #f3e58f; /* Un jaune plus clair au survol */
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-thumbnail {
+  margin: 15px;
+  transition: transform 0.3s;
+}
+
+.portfolio-thumbnail img,
+.portfolio-thumbnail video {
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-  #fresque {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-  }
+.portfolio-thumbnail:hover {
+  transform: scale(1.05);
+}
 
-  #fresque ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+#portfolio img[src*="enjooy.jpg"] {
+  max-width: 400px;
+  height: auto;
+}
 
-  #fresque ul li {
-    margin: 10px 0;
-  }
+/* Contact Section */
+#contact {
+  background: #f9f7a4; /* Remplacer le bleu par du jaune pâle */
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
 
-  #fresque .logo {
-    margin-bottom: 10px;
-  }
+#contact h2 {
+  color: black;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact a {
+  color: #5271ff;
+  text-decoration: underline;
+}
+
+#contact iframe {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Footer */
+#footer {
+  background: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+#footer a {
+  color: #5271ff;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #83a4ff;
 }
