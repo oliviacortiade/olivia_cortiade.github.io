@@ -1,4 +1,3 @@
-
 /*
   Theme Name: Folio
   Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
@@ -6,7 +5,7 @@
   Author URL: https://bootstrapmade.com
 */
 
-/*  General Styling
+/* General Styling
 /*-----------------------------------------------------------------------------------*/
 
 body {
@@ -30,16 +29,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
-h1
-{
-font-size: large;
+h1 {
+  font-size: large;
 }
 
 h2 {
   color: #5271ff;
   font-weight: 600;
   font-size: 40px;
-  margin-left; 20px;
+  margin-left: 20px;
 }
 
 h4 {
@@ -95,7 +93,7 @@ p {
   font-size: 15px;
   color: #999999;
   line-height: 28px;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
 ::-moz-selection {
@@ -136,9 +134,8 @@ p {
   font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-left:24px;
+  margin-left: 24px;
   color: #5271ff;
- 
 }
 
 .form-control {
@@ -183,8 +180,7 @@ p {
   margin-bottom: 30px;
 }
 
-/*-----------------------------------------------------------------------------------*/
-/*  Navbar Top
+/* Navbar Top
 /*-----------------------------------------------------------------------------------*/
 
 nav {
@@ -219,13 +215,12 @@ nav ul li a {
   position: relative;
   display: block;
   font-size: 14px;
-  color: ##5271ff;
+  color: #5271ff;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
 }
 
 .logo {
@@ -246,423 +241,13 @@ nav ul li a {
   color: #afafaf;
 }
 
-/*----------------------------------------------------------------------------------*/
-/*  Header
+/* Header
 /*-----------------------------------------------------------------------------------*/
-
 
 #header {
-background: url("../images/moi.jpg") no-repeat center center;
- background-size: cover;
- height: 100vh;
+  background: url("../images/moi.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  
-}
-@media (max-width: 768px) {
-    #header {
-        background: url("../images/moi.jpg") no-repeat center center;
-        background-size: contain; /* L'image sera entièrement visible sans coupure */
-        background-attachment: scroll; /* Désactive l'effet parallaxe sur mobile */
-        height: auto; /* Ajuste la hauteur pour le contenu */
-        min-height: 50vh; /* Assure un minimum de hauteur */
-    }
-}
-
-
-#header .header-content {
-  height: 100vh;
-  text-align: left;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.header-content h1 {
- text-decoration: underline;
- text-decoration-thickness: 2px;
-  font-size: 70px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: #5271ff;
-  margin-left: 20px;
-}
-.header-content h2 {
-margin-left: 20px;
-}
-.header-content p {
-  font-size: 13px;
-  letter-spacing: 5px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  color: #5271ff;
-  font-weight: 500;
-  margin-left: 20px;
-  
-}
-
-.header-content .list-social li {
-  float: left;
-  margin-right: 20px;
-}
-
-.header-content .list-social li i {
-  color: #fff;
-  font-size: 15px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Aout-us
-/*-----------------------------------------------------------------------------------*/
-
-#about {
-  width: 100%;
-  height: auto;
-  background: #f7f7f7;
-  padding-top: 190px;
-  margin-right: 20px
-}
-
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #5271ff;
-  margin-left: 20px
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  object-fit: cover;
-}
-
-#about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-  margin-left: 20px;
-  color: #5271ff;
-}
-
-#about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-  margin-left: 20px
-}
-/*-----------------------------------------------------------------------------------*/
-/*  Experience
-/*-----------------------------------------------------------------------------------*/
-
-#Experience {
-	width: 100%;
-  height: auto;
-  background: #f7f7f7;
-  padding-top: 190px;
-  margin-right: 20px
-}
-#Experience .expert .ordi {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-  margin-left: 20px;
-  color: #5271ff;
- 
-  }
- #Experience .expert .separt {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
-  margin-left: 20px
-	
-
-
-/*-----------------------------------------------------------------------------------*/
-/*  Portfolio
-/*-----------------------------------------------------------------------------------*/
-
-#portfolio {
-  position: center;
-  padding-bottom: 50px;
-}
-
-#portfolio .portfolio-list {
-  margin-bottom: 50px;
-}
-
-#portfolio .portfolio-list .nav {
-  display: inline-block;
-  margin: 0;
-}
-
-#portfolio .portfolio-list .nav li {
-  margin: 0 40px 0 0;
-  float: left;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  cursor: pointer;
-  font-family: 'Poppins', helvetica;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#portfolio .portfolio-container {
-  display: inline-block;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.portfolio-thumbnail {
-  margin-bottom: 30px;
-  overflow: hidden;
-  min-height: 260px;
-}
-
-.portfolio-thumbnail img {
-  max-width: 80%;
-  
-/* Conteneur vidéo */
-.video-container {
-    margin-top: 20px;
-    text-align: center;
-    overflow: hidden; /* Cache tout débordement du conteneur */
-}
-
-/* Vidéo responsive */
-.portfolio-video {
-    width: 100%;        /* La vidéo prend la largeur complète du conteneur */
-    height: auto;       /* Ajuste la hauteur automatiquement pour maintenir les proportions */
-    max-width: 100%;    /* Assure que la vidéo ne dépasse pas la largeur du conteneur */
-    object-fit: contain; /* Maintient les proportions sans déformation */
-    display: block;     /* Pour éviter les marges ou l'espacement inutiles autour de la vidéo */
-    margin: 0;          /* Élimine les marges par défaut */
-    border: none;       /* Supprime la bordure par défaut */
-    box-shadow: none;   /* Supprime l'ombre (si elle existe) */
-}
-
-/* Vidéo à l'intérieur des éléments .portfolio-thumbnail */
-.portfolio-thumbnail video {
-    width: 100%;         /* Remplir la largeur du conteneur */
-    height: auto;        /* Laisser la hauteur ajustée automatiquement pour maintenir les proportions */
-    max-width: 100%;     /* Assure que la vidéo ne dépasse pas le conteneur */
-    object-fit: contain; /* Maintenir les proportions sans déformation */
-    margin-bottom: 20px; /* Espacement inférieur */
-    border: none;        /* Supprimer la bordure */
-    box-shadow: none;    /* Supprimer l'ombre */
-}
-
-/* Règles globales pour les vidéos */
-video {
-    width: 100%;         /* Remplir la largeur du conteneur */
-    height: auto;        /* Ajuster la hauteur pour conserver les proportions */
-    max-width: 100%;     /* Assure que la vidéo ne dépasse pas la largeur du conteneur */
-    border: none;        /* Supprimer la bordure */
-    margin: 0;           /* Supprimer la marge */
-    box-shadow: none;    /* Supprimer l'ombre */
-}
-
-}
-
-
-/*-----------------------------------------------------------------------------------*/
-/*  Journal
-/*-----------------------------------------------------------------------------------*/
-
-#journal,  #journal-blog {
-  height: auto;
-  width: 100%;
-  background: #f7f7f7;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-#journal-blog {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
-#journal .journal-block {
-  display: inline-block;
-  height: auto;
-  width: 100%;
-}
-
-#journal .journal-block .journal-info {
-  position: relative;
-}
-
-.journal-block .journal-info img {
-  max-width: 100%;
-}
-
-.journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
-  position: relative;
-}
-
-.journal-block .journal-info .journal-txt h4 a {
-  display: block;
-  font-size: 19px;
-  line-height: 24px;
-  margin: 0 0 13px 0;
-  font-weight: 500;
-  color: #292929;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Contact
-/*-----------------------------------------------------------------------------------*/
-
-#contact {
-  height: auto;
-  width: 100%;
-}
-
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-details li {
-  padding-bottom: 10px;
-}
-
-#contact input, #contact textarea {
-  width: 100%;
-}
-
-
-#contact  #sendmessage {
-  color: #18d26e;
-  border: 1px solid #18d26e;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact  #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
-  display: block;
-}
-
-#contact .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Footer
-/*-----------------------------------------------------------------------------------*/
-
-#footer {
-  background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#footer .socials-media {
-  width: 100%;
-}
-
-#footer .socials-media ul {
-  display: inline-block;
-  float: none;
-  margin: 0 0 20px 0;
-}
-
-#footer .socials-media ul li {
-  float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#footer .socials-media ul li a {
-  font-size: 24px;
-  color: #999;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  background: transparent;
-  text-transform: uppercase;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#footer .socials-media ul li a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-#footer p {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  margin-left: 40px;
-  text-transform: uppercase;
-}
-
-.credits {
-  font-size: 13px;
 }
