@@ -8,7 +8,7 @@ body {
   background: #f9f9f9;
 }
 
-/* Fresque en haut */
+/* Fresque en haut (fixée) */
 #fresque {
   position: fixed;
   top: 0;
@@ -19,21 +19,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* Centrer le contenu horizontalement */
-  flex-direction: column; /* Empiler les éléments (logo et menu) verticalement */
-  padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
-/* Liens du menu de navigation sous le logo */
+
+/* Liens du menu de navigation */
 #fresque ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  justify-content: center; /* Centrer horizontalement les éléments du menu */
 }
 
 #fresque ul li {
-  margin: 0 15px;
+  margin: 0 20px; /* Espacement entre les éléments du menu */
 }
 
 #fresque ul li a {
@@ -46,19 +46,6 @@ body {
 
 #fresque ul li a:hover {
   color: #5271ff; /* Couleur bleue au survol */
-}
-
-
-/* Liens du menu de navigation */
-#fresque ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-#fresque ul li {
-  margin: 0 15px;
 }
 
 /* About Section */
