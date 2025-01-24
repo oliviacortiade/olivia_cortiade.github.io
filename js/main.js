@@ -7,7 +7,6 @@ $(document).ready(function() {
   //  //SMOOTH SCROLL
   // ========================================================================= //
 
-
   $(document).on("scroll", onScroll);
 
   $('a[href^="#"]').on('click', function(e) {
@@ -35,7 +34,6 @@ $(document).ready(function() {
     });
   });
 
-
   function onScroll(event) {
     if ($('.home').length) {
       var scrollPos = $(document).scrollTop();
@@ -49,7 +47,6 @@ $(document).ready(function() {
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
-
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -85,11 +82,9 @@ $(document).ready(function() {
     });
   });
 
-
   // ========================================================================= //
   //  Owl Carousel Services
   // ========================================================================= //
-
 
   $('.services-carousel').owlCarousel({
       autoplay: true,
@@ -106,7 +101,8 @@ $(document).ready(function() {
   // ========================================================================= //
 
   var magnifPopup = function() {
-    $('.popup-img').magnificPopup({
+    // Exclure les éléments avec la classe 'no-popup'
+    $('.popup-img').not('.no-popup').magnificPopup({
       type: 'image',
       removalDelay: 300,
       mainClass: 'mfp-with-zoom',
@@ -114,65 +110,34 @@ $(document).ready(function() {
         enabled: true
       },
       zoom: {
-        enabled: true, // By default it's false, so don't forget to enable it
-
-        duration: 300, // duration of the effect, in milliseconds
-        easing: 'ease-in-out', // CSS transition easing function
-
-        // The "opener" function should return the element from which popup will be zoomed in
-        // and to which popup will be scaled down
-        // By defailt it looks for an image tag:
+        enabled: true,
+        duration: 300,
+        easing: 'ease-in-out',
         opener: function(openerElement) {
-          // openerElement is the element on which popup was initialized, in this case its <a> tag
-          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
           return openerElement.is('img') ? openerElement : openerElement.find('img');
         }
       }
     });
   };
 
-
-  // Call the functions
+  // Appelle la fonction
   magnifPopup();
 
 });
 
 // ========================================================================= //
-//  Porfolio isotope and filter
+//  Portfolio isotope and filter
 // ========================================================================= //
 $(window).load(function(){
-
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on( 'click', function() {
+  $('#portfolio-flters li').on('click', function() {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
-var magnifPopup = function() {
-  $('.popup-img').not('.no-popup').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-with-zoom',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function(openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-  });
-};
-
-// Appelle la fonction
-magnifPopup();
-  });
-})
+});
