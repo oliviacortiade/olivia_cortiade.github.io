@@ -43,57 +43,66 @@ p {
   color: black;
   line-height: 1.8;
 }
+
+/* Menu de navigation */
 nav {
-  position: fixed; /* Le menu est fixe en haut de la page */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Prend toute la largeur de la page */
+  width: 100%;
   background: #f9f7a4;
-  z-index: 1000; 
-  padding: 20px 0; /* Espacement vertical du menu */
+  z-index: 1000;
+  padding: 20px 0;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .nav-menu {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
 }
+
 nav ul {
-  list-style: none; 
-  margin: 0; 
-  padding: 0; 
-  display: flex; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
 nav ul li {
-  margin-right: 20px; /* Espace entre les éléments du menu */
-  font-size: 14px; /* Taille de la police */
-  text-transform: uppercase; /* Met le texte en majuscules */
-  font-weight: 500; /* Poids de la police */
+  margin-right: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
+
 nav ul li a {
-  color: #5271ff; /* Couleur bleue pour les liens */
-  text-decoration: none; /* Enlève le soulignement par défaut */
-  transition: all 0.3s ease; /* Ajoute une transition fluide au survol */
+  color: #5271ff;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
+
 nav ul li a:hover {
-  color: #b8a07e; /* Change la couleur du texte au survol */
-  text-decoration: underline; /* Ajoute un soulignement au survol */
+  color: #b8a07e;
+  text-decoration: underline;
 }
+
 nav ul li.active a {
-  color: #292929; /* Change la couleur du lien actif */
-  font-weight: 700; /* Met le lien actif en gras */
+  color: #292929;
+  font-weight: 700;
 }
+
 .logo img {
-  height: 50px; /* Définit la hauteur du logo */
-  width: auto; /* La largeur s'ajuste automatiquement pour garder le ratio d'aspect */
-  border-radius: 10px; /* Ajoute des coins arrondis au logo */
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
 }
 
 /* Sections générales */
 .paddsection {
   padding: 60px 20px;
-  background: #fff;  /* Fond d'origine */
+  background: #fff;
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,7 +111,7 @@ nav ul li.active a {
 /* Header */
 #header {
   height: 100vh;
-  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4); 
+  background: linear-gradient(to bottom, #f9f7a4, #f9f7a4);
   color: white;
   display: flex;
   justify-content: center;
@@ -129,7 +138,7 @@ nav ul li.active a {
 
 #about img {
   max-width: 300px;
-  border-radius: 50%; /* Rondit l'image en forme de cercle */
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,7 +161,7 @@ nav ul li.active a {
   margin: 10px;
   max-width: 300px;
   height: auto;
-  border-radius: 10px; /* Ajoute des coins arrondis */
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -176,15 +185,15 @@ nav ul li.active a {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px;
-  background: #f9f7a4; /* Remplacer le bleu par du jaune pâle */
-  color: black; /* Assurez-vous que le texte reste visible */
+  background: #f9f7a4;
+  color: black;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 #portfolio .portfolio-list li:hover {
-  background: #f3e58f; /* Un jaune plus clair au survol */
+  background: #f3e58f;
 }
 
 .portfolio-container {
@@ -202,7 +211,7 @@ nav ul li.active a {
 .portfolio-thumbnail video {
   max-width: 100%;
   height: auto;
-  border-radius: 10px; /* Ajoute des coins arrondis */
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -213,7 +222,7 @@ nav ul li.active a {
 #portfolio img[src*="enjooy.jpg"] {
   max-width: 400px;
   height: auto;
-  border-radius: 10px; /* Ajoute des coins arrondis spécifiques */
+  border-radius: 10px;
 }
 
 /* Contact Section */
@@ -248,7 +257,7 @@ nav ul li.active a {
 
 #contact iframe {
   margin-top: 20px;
-  border-radius: 10px; /* Ajoute des coins arrondis à l'iframe */
+  border-radius: 10px;
   border: none;
 }
 
@@ -279,35 +288,35 @@ nav ul li.active a {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   body {
-    font-size: 14px;  /* Ajuste la taille de la police */
+    font-size: 14px;
   }
 
   .nav-menu {
-    flex-direction: column; /* Aligne les éléments du menu verticalement */
-    align-items: flex-start; /* Aligne les éléments à gauche */
-    padding: 0 20px; /* Ajuste l'espacement interne */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
   }
 
   nav ul {
-    flex-direction: column; /* La liste des éléments devient verticale */
-    width: 100%; /* La liste prend toute la largeur disponible */
+    flex-direction: column;
+    width: 100%;
   }
 
   nav ul li {
-    margin-bottom: 10px; /* Ajoute un espacement entre les éléments du menu */
+    margin-bottom: 10px;
   }
 
   .logo img {
-    height: 40px; /* Reduit la taille du logo sur mobile */
+    height: 40px;
   }
 
   /* Header */
   #header .header-content h1 {
-    font-size: 40px; /* Taille de titre réduite */
+    font-size: 40px;
   }
 
   #header .header-content h2 {
-    font-size: 25px; /* Taille de sous-titre réduite */
+    font-size: 25px;
   }
 
   /* Portfolio */
@@ -316,26 +325,36 @@ nav ul li.active a {
   }
 
   .portfolio-thumbnail {
-    width: 90%; /* Chaque élément prend presque toute la largeur */
+    width: 90%;
     margin: 10px 0;
   }
 
   /* À propos de l'image */
   #about img {
-    max-width: 80%; /* Réduit la taille de l'image de profil */
+    max-width: 80%;
   }
 
   /* Contact Section */
   #contact {
-    padding: 40px 20px;  /* Moins d'espace */
+    padding: 40px 20px;
   }
 
   #contact h2 {
-    font-size: 30px;  /* Taille réduite sur mobile */
+    font-size: 30px;
   }
 
   #footer p {
-    font-size: 12px;  /* Taille de texte réduite dans le footer */
+    font-size: 12px;
     text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header .header-content h1 {
+    font-size: 50px;
+  }
+
+  #header .header-content h2 {
+    font-size: 30px;
   }
 }
