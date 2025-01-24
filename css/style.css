@@ -278,6 +278,10 @@ nav ul li.active a {
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
+  body {
+    font-size: 14px;  /* Ajuste la taille de la police */
+  }
+
   .nav-menu {
     flex-direction: column; /* Aligne les éléments du menu verticalement */
     align-items: flex-start; /* Aligne les éléments à gauche */
@@ -292,3 +296,46 @@ nav ul li.active a {
   nav ul li {
     margin-bottom: 10px; /* Ajoute un espacement entre les éléments du menu */
   }
+
+  .logo img {
+    height: 40px; /* Reduit la taille du logo sur mobile */
+  }
+
+  /* Header */
+  #header .header-content h1 {
+    font-size: 40px; /* Taille de titre réduite */
+  }
+
+  #header .header-content h2 {
+    font-size: 25px; /* Taille de sous-titre réduite */
+  }
+
+  /* Portfolio */
+  .portfolio-container {
+    flex-direction: column;
+  }
+
+  .portfolio-thumbnail {
+    width: 90%; /* Chaque élément prend presque toute la largeur */
+    margin: 10px 0;
+  }
+
+  /* À propos de l'image */
+  #about img {
+    max-width: 80%; /* Réduit la taille de l'image de profil */
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 40px 20px;  /* Moins d'espace */
+  }
+
+  #contact h2 {
+    font-size: 30px;  /* Taille réduite sur mobile */
+  }
+
+  #footer p {
+    font-size: 12px;  /* Taille de texte réduite dans le footer */
+    text-align: center;
+  }
+}
